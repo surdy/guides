@@ -27,4 +27,5 @@ Connect to the network using
 `wpa_supplicant -B -i wlp3s0 -c /etc/wpa_spplicant/wpa_supplicant.conf`
 
 Run the DHCP deamon
+
 `dhcpcd wlp3s0`
