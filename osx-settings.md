@@ -10,4 +10,10 @@ If you see Corestorage logical volumes then revert to default partition type by 
 Now you should be able to resize the partition
 
 
-##
+## Regular mouse scroll direction 
+
+`defaults write -g com.apple.swipescrolldirection -bool false`
+
+## Show hidden files
+
+`defaults write com.apple.finder AppleShowAllFiles YES`
