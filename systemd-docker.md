@@ -64,8 +64,8 @@ docker build -t nginx_fedora .
 ```
 
 
-The container needs to be run in priviledged mode because systemd requires the `CAP_SYS_ADMIN` capability. systemd the cgroup file system within the container, so the cgroup file system `/sys/fs/cgroup` needs to be mounted to the container using the volume mount
+We need to add the `CAP_SYS_ADMIN` capability for systemd so we need to either use `--cap-add=SYS_ADMIN` or `--priviledged `. systemd the cgroup file system within the container, so the cgroup file system `/sys/fs/cgroup` needs to be mounted to the container using the volume mount
 
 ```
-sudo docker run --privileged -ti -v /sys/fs/cgroup:/sys/fs/cgroup:ro -p 80:80 nginx_fedora
+sudo docker run --cap-add=SYS_ADMIN -ti -v /sys/fs/cgroup:/sys/fs/cgroup:ro -p 80:80 nginx_fedora
 ```
