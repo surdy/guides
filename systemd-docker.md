@@ -33,7 +33,9 @@ CMD ["/usr/sbin/init"]
 ```
 
 Lets build the docker image.
-`docker build -t systemd_fedora .`
+```
+docker build -t systemd_fedora .
+```
 
 Now we have a base systemd docker image we can use for creating single service images.
 
@@ -57,8 +59,13 @@ CMD ["/usr/sbin/init"]
 ```
 
 Lets build the nginx image:
-`docker build -t nginx_fedora .`
+```
+docker build -t nginx_fedora .
+```
 
 
 The container needs to be run in priviledged mode because systemd requires the `CAP_SYS_ADMIN` capability. systemd the cgroup file system within the container, so the cgroup file system `/sys/fs/cgroup` needs to be mounted to the container using the volume mount
-`sudo docker run --privileged -ti -v /sys/fs/cgroup:/sys/fs/cgroup:ro -p 80:80 nginx_fedora`
+
+```
+sudo docker run --privileged -ti -v /sys/fs/cgroup:/sys/fs/cgroup:ro -p 80:80 nginx_fedora
+```
