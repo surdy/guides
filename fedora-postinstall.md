@@ -29,3 +29,4 @@ sudo cp patched/*.ttf /usr/share/fonts/awesome-terminal-fonts
 sudo fc-cache -fv /usr/share/fonts/awesome-terminal-fonts
 ```
 
+`git clone https://github.com/arialdomartini/oh-my-git.git ~/.oh-my-git && echo source ~/.oh-my-git/prompt.sh >> ~/.bashrc`
