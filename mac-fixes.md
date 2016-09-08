@@ -75,3 +75,16 @@ su -c "echo XHC1 > /proc/acpi/wakeup"
 su -c "echo LID0 > /proc/acpi/wakeup"
 ```
 to toggle the state to `disabled`
+
+###MBP fan fix
+
+```
+git clone https://github.com/dgraziotin/mbpfan
+cd mbpfan
+make 
+sudo make install
+sudo cp mbpfan.service /etc/systemd/system/
+sudo systemctl enable mbpfan.service
+sudo systemctl start mbpfan.service
+```
+
