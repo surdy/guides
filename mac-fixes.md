@@ -3,12 +3,12 @@
 ##Wireless card
 Install RPM Fusion repos
 ```
-sudo dnf install --nogpgcheck http://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm http://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+sudo dnf install -y --nogpgcheck http://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm http://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 ```
 
 Install the broadcom wireless drivers:
 ```
-sudo yum install kernel-devel akmod-wl
+sudo dnf install -y kernel-devel-$(uname -r) akmod-wl
 ```
 
 Reload wireless module
