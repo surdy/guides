@@ -18,3 +18,14 @@ sudo dnf install --nogpgcheck http://download1.rpmfusion.org/free/fedora/rpmfusi
 
 `sudo  dnf install -y https://downloads.slack-edge.com/linux_releases/slack-2.1.2-0.1.fc21.x86_64.rpm`
 
+
+```
+cd /tmp
+git clone http://github.com/gabrielelana/awesome-terminal-fonts
+cd awesome-terminal-fonts
+git checkout patching-strategy
+sudo mkdir -p /usr/share/fonts/awesome-terminal-fonts
+sudo cp patched/*.ttf /usr/share/fonts/awesome-terminal-fonts
+sudo fc-cache -fv /usr/share/fonts/awesome-terminal-fonts
+```
+
