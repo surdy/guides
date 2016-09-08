@@ -16,4 +16,3 @@ sudo dnf install --nogpgcheck http://download1.rpmfusion.org/free/fedora/rpmfusi
 
 `sudo dnf install -y --nogpgcheck https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm`
 
-`sudo dnf install -y vim`
