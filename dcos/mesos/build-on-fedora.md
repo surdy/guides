@@ -11,6 +11,9 @@
 ## Install other Mesos dependencies.
 `sudo dnf install -y apache-maven python-devel java-1.8.0-openjdk-devel zlib-devel libcurl-devel openssl-devel cyrus-sasl-devel cyrus-sasl-md5 apr-devel subversion-devel apr-util-devel`
 
+## Install redhat-rpm-config
+`sudo dnf install redhat-rpm-config`
+
 ## Change working directory.
 `cd mesos`
 
