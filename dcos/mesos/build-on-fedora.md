@@ -26,5 +26,5 @@
 mkdir build
 cd build
 ../configure
-make
+make -j$(nproc --all)
 ```
