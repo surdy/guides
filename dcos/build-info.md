@@ -11,5 +11,5 @@ curl -s --header "Authorization: token=<token>" http://<master-host-name>/pkgpan
 ```
 
 ```
-curl -s --header "Authorization: token=$(dcos config show core.dcos_acs_token)" $(dcos config show core.dcos_url)/dcos-metadata/dcos-version.json
+curl -s --header "Authorization: token=$(dcos config show core.dcos_acs_token)" $(dcos config show core.dcos_url)/pkgpanda/active.buildinfo.full.json
 ```
