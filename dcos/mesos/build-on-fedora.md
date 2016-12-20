@@ -3,6 +3,7 @@
 
 ## Fetch the Apache Maven repo file.
 `sudo wget http://repos.fedorapeople.org/repos/dchen/apache-maven/epel-apache-maven.repo -O /etc/yum.repos.d/epel-apache-maven.repo`
+
 `sudo sed -i -e 's/epel-$releasever/fedora-23/' /etc/yum.repos.d/epel-apache-maven.repo
 
 ## Install essential development tools.
