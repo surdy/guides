@@ -4,6 +4,10 @@
 ```
 cat /opt/mesosphere/active/dcos-metadata/etc/dcos-version.json
 ```
+OR
+```
+cat /opt/mesosphere/etc/dcos-version.json
+```
 
 ### Using DC/OS CLI
 ```
