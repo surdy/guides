@@ -1,4 +1,4 @@
-sudo dnf -y install golang glibc-static libvirt-devel glibc-devel.i686 glibc-devel libstdc++-devel.i686
+sudo dnf -y install golang glibc-static libvirt-devel glibc-devel.i686 glibc-devel libstdc++-devel.i686 p7zip p7zip-plugins ncurses-devel
 git clone git@github.com:kubernetes/minikube
 make minikube
 make minikube_iso
