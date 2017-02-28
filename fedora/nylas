@@ -1,2 +1,5 @@
-sudo dnf install -y git make python gcc-c++ npm libgnome-keyring-devel 
+sudo dnf install -y git make python gcc-c++ npm libgnome-keyring-devel libxkbfile-devel rpmdevtools
 git clone https://github.com/nylas/nylas-mail 
+scripts/bootstrap
+scripts/grunt build
+scripts/grunt create-rpm-installer
