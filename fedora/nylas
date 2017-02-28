@@ -1,0 +1,2 @@
+sudo dnf install -y git make python gcc-c++ npm libgnome-keyring-devel 
+git clone https://github.com/nylas/nylas-mail 
