@@ -24,4 +24,6 @@ for id in $(dcos node --json | jq --raw-output '.[] | select(.reserved_resources
 
 ## How to find the Public IP address of the public agents in the cluster ?
 
+```
 for id in $(dcos node --json | jq --raw-output '.[] | select(.reserved_resources.slave_public != null) | .id'); do dcos node ssh --option StrictHostKeyChecking=no --option LogLevel=quiet --master-proxy --mesos-id=$id "curl -s ifconfig.co" ; done 2>/dev/null
+```
