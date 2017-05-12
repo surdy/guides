@@ -23,9 +23,9 @@ boot
 
 Fedora
 
-sudo mkdir -p /boot/efi/EFI/custom
-curl -O  https://github.com/0xbb/apple_set_os.efi/releases/download/v1/apple_set_os.efi
-sudo mv apple_set_os.efi /boot/efi/EFI/custom
+`sudo mkdir -p /boot/efi/EFI/custom`
+`curl -O  https://github.com/0xbb/apple_set_os.efi/releases/download/v1/apple_set_os.efi`
+`sudo mv apple_set_os.efi /boot/efi/EFI/custom`
 
 
 `/etc/grub.d/40_custom` :
