@@ -1,0 +1,12 @@
+```
+/opt/mesosphere
+/etc/systemd/system/dcos-*
+/etc/systemd/system/dcos.target
+/etc/systemd/system/dcos.target.wants
+```
+
+```
+/opt/mesosphere/etc
+```
+
+to be continued
