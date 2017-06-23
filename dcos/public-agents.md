@@ -2,16 +2,16 @@
 
 ### Using DC/OS CLI
 ```
-dcos node --json | jq '.[] | select(.reserved_resources.slave_public != null) | [.id] | length'
+dcos node --json | jq '.[] | select(.reserved_resources.slave_public != null) | .id' | wc -l
 ```
 
 ### Using curl
 ```
-curl -s --header "Authorization: token=<token>" http://<master-hostname-or-ip>/mesos/slaves | jq '.slaves[] | select(.reserved_resources.slave_public != null) | [.id] | length'
+curl -s --header "Authorization: token=<token>" http://<master-hostname-or-ip>/mesos/slaves | jq '.slaves[] | select(.reserved_resources.slave_public != null) | .id' | wc -l
 ```
 
 ```
-curl -s --header "Authorization: token=$(dcos config show core.dcos_acs_token)" (dcos config show core.dcos_url)/mesos/slaves | jq '.slaves[] | select(.reserved_resources.slave_public != null) | [.id] | length'
+curl -s --header "Authorization: token=$(dcos config show core.dcos_acs_token)" (dcos config show core.dcos_url)/mesos/slaves | jq '.slaves[] | select(.reserved_resources.slave_public != null) | .id'  | wc -l
 ```
 
 
