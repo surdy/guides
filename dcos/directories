@@ -9,4 +9,19 @@
 /opt/mesosphere/etc
 ```
 
-to be continued
+```
+/var/lib/dcos/mesos/log/
+```
+
+```
+/var/lib/dcos/mesos/master/
+```
+
+```
+/var/lib/dcos/exhibitor/zookeeper/
+```
+
+```
+/var/lib/mesos/slave/meta/slaves/
+/var/lib/mesos/slave/meta/slaves/latest
+```
