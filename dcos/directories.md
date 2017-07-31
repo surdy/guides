@@ -22,6 +22,6 @@
 ```
 
 ```
-/var/lib/mesos/slave/meta/slaves/
+/var/lib/mesos/slave/slaves/
 /var/lib/mesos/slave/meta/slaves/latest
 ```
