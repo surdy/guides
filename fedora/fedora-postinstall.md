@@ -17,7 +17,7 @@ sudo dnf install --nogpgcheck http://download1.rpmfusion.org/free/fedora/rpmfusi
 
 `sudo  dnf install -y https://downloads.slack-edge.com/linux_releases/slack-2.1.2-0.1.fc21.x86_64.rpm`
 
-`sudo dnf install gstreamer-plugins-bad gstreamer-plugins-bad-free-extras gstreamer-plugins-bad-nonfree gstreamer-plugins-ugly gstreamer-ffmpeg gstreamer1-libav gstreamer1-plugins-bad-free-extras gstreamer1-plugins-bad-freeworld gstreamer1-plugins-base-tools gstreamer1-plugins-good-extras gstreamer1-plugins-ugly gstreamer1-plugins-bad-free gstreamer1-plugins-good gstreamer1-plugins-base gstreamer1`
+`sudo dnf groupinstall multimedia`
 
 ```
 cd /tmp
